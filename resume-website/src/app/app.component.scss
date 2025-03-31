@@ -1,0 +1,47 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  nav {
+    a {
+      margin-left: 16px;
+      text-decoration: none;
+      color: white;
+      
+      &.active {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  margin-top: 64px; // Height of the toolbar
+  padding: 24px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
